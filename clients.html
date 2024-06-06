@@ -81,7 +81,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Share Holders</li>
+                <li class="breadcrumb-item active" aria-current="page">Clients</li>
               </ol>
             </nav>
           </div>
@@ -125,16 +125,129 @@
                 <thead class="table-primary">
                   <tr>
                     <th width="100" class="text-center" scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th width="200" class="text-center" scope="col">Action</th>
+                    <th scope="col">_____Client_Info_____</th>
+                    <th scope="col" class="text-start">Project Details</th>
+                    <th width="200" class="text-center" scope="col">_____Action_____</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="text-center" scope="row">1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td>
+                      <a href="" class="fw-bold" data-bs-toggle="modal" data-bs-target="#Info">
+                        Farhan Masuk
+                        <br>
+                        01701 00 87 07
+                        <br>
+                        First Security Islami Bank PLC
+                      </a>
+                    </td>
+                    <td class="text-start">
+
+                      <div class="row border-bottom fw-bold">
+                        <div class="col-4">
+                          Name 
+                        </div>
+                        <div class="col-2 text-end">
+                          Budget_(tk)
+                        </div>
+                        <div class="col-2 text-end">
+                          Paid_(tk)
+                        </div>
+                        <div class="col-2 text-end">
+                          Due_(tk)
+                        </div>
+                        <div class="col-2 text-center">
+                          ___Action___
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="" class="fw-bold">
+                            Kinyoee It News Paper
+                          </a>
+                        </div>
+                        <div class="col-2 text-end">
+                          50000
+                        </div>
+                        <div class="col-2 text-end">
+                          20000
+                        </div>
+                        <div class="col-2 text-end">
+                          30000
+                        </div>
+                        <div class="col-2 text-center">
+                          <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1"><i class="bi bi-pencil-square"></i></a>
+                          <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="" class="fw-bold">
+                            Kinyoee Website
+                          </a>
+                        </div>
+                        <div class="col-2 text-end">
+                          10000
+                        </div>
+                        <div class="col-2 text-end">
+                          <a href="" class="fw-bold">
+                            10000
+                          </a>
+                        </div>
+                        <div class="col-2 text-end">
+                          0
+                        </div>
+                        <div class="col-2 text-center">
+                          <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1"><i class="bi bi-pencil-square"></i></a>
+                          <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
+                        </div>
+                      </div>
+
+                      <div class="row border-top">
+                        <div class="col-12 text-center">
+                          <a data-bs-toggle="modal" data-bs-target="#CreateProject" href="" class="fw-bold btn btn-primary py-0 px-2">
+                            CreateProject
+                          </a>
+                        </div>
+
+                      </div> 
+
+
+          <!-- CreateProject -->
+          <div class="modal fade" id="CreateProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                  <div class="row">
+                    <div class="col-md-12 pb-3">
+                      <label for="">Project Name</label>
+                      <input type="text" name="" id="" class="form-control my-2">
+                    </div>
+                    <div class="col-md-12 pb-3">
+                      <label for="">Requirement File</label>
+                      <input type="file" name="" id="" class="form-control my-2">
+                    </div>
+                    <div class="col-md-12 pb-3">
+                      <label for="">Budget</label>
+                      <input type="text" name="" id="" class="form-control my-2">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    </td>
                     <td class="text-center">
                       <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-1"><i class="bi bi-pencil-square"></i></a>
                       <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-1"><i class="bi bi-trash-fill"></i></a>
@@ -186,6 +299,48 @@
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                           <button type="button" class="btn btn-danger">Yes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Info -->
+                  <div class="modal fade" id="Info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+
+                              <div class="row border-bottom">
+                                <div class="col-3 fw-bold">Name:</div>
+                                <div class="col-9">Farhan Masuk</div>
+                              </div>
+                              <div class="row border-bottom">
+                                <div class="col-3 fw-bold">Company Name:</div>
+                                <div class="col-9">First Security Islami Bank PLC</div>
+                              </div>
+                              <div class="row border-bottom">
+                                <div class="col-3 fw-bold">Mobile_1:</div>
+                                <div class="col-9"></div>
+                              </div>
+                              <div class="row border-bottom">
+                                <div class="col-3 fw-bold">Mobile_2:</div>
+                                <div class="col-9"></div>
+                              </div>
+                              <div class="row border-bottom">
+                                <div class="col-3 fw-bold">Address:</div>
+                                <div class="col-9"></div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                       </div>
                     </div>
