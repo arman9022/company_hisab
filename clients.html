@@ -86,7 +86,7 @@
             </nav>
           </div>
           <div class="col-md-4 text-end">
-            <a data-bs-toggle="modal" data-bs-target="#Create" href="" class="btn btn-primary">CreateClient</a>
+            <a data-bs-toggle="modal" data-bs-target="#Create" href="" class="btn btn-primary">AddClient</a>
           </div>
           <!-- Create -->
           <div class="modal fade" id="Create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -127,7 +127,7 @@
                     <th class="text-center" scope="col">#</th>
                     <th scope="col">_____Client_Info_____</th>
                     <th scope="col" class="text-center">Project Details</th>
-                    <th class="text-center" scope="col">___Action___</th>
+                    <th class="text-center" scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -150,7 +150,7 @@
                           <tr>
                             <th>ProjectName</th>
                             <th class="text-end">Budget_(tk)</th>
-                            <th class="text-end">Paid_(tk)</th>
+                            <th class="text-center">Paid_(tk)</th>
                             <th class="text-end">Due_(tk)</th>
                             <th class="text-center">___StartDate___</th>
                             <th class="text-center">DeliveryDate</th>
@@ -165,14 +165,87 @@
                                 Kinoyee IT website
                               </a>
                             </td>
-                            <td class="text-end">10000</td>
-                            <td class="text-end">10000</td>
-                            <td class="text-end">0</td>
+                            <td class="text-end fw-bold">10000</td>
+                            <td class="text-center">
+                              <table class="table table-bordered table-hover table-striped table-responsive">
+                                <thead class="table-secondary">
+                                  <tr>
+                                    <th class="text-end">Amount_(tk)</th>
+                                    <th>______Date_____</th>
+                                    <th>___Action___</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+                                  <tr>
+                                    <td class="text-end">3000</td>
+                                    <td>01-06-2024</td>
+                                    <td>
+                                      <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1"><i class="bi bi-pencil-square"></i></a>
+                                      <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-end">3000</td>
+                                    <td>04-06-2024</td>
+                                    <td>
+                                      <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1"><i class="bi bi-pencil-square"></i></a>
+                                      <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="fw-bold">
+                                    <td class="text-end">
+                                      6000
+                                    </td>
+                                    <td class="text-center" colspan="2">
+                                      Total
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-center" colspan="3">
+                                      <a data-bs-toggle="modal" data-bs-target="#AddPayment" href="" class="btn btn-secondary py-0 px-1">AddPayment</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+
+          <!-- AddPayment -->
+          <div class="modal fade" id="AddPayment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                  <div class="row text-start">
+                    <div class="col-md-12 pb-3">
+                      <label for="">Amount</label>
+                      <input type="text" name="" id="" class="form-control my-2">
+                    </div>
+                    <div class="col-md-12 pb-3">
+                      <label for="">Date</label>
+                      <input type="date" name="" id="" class="form-control my-2">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                            </td>
+                            <td class="text-end fw-bold">4000</td>
                             <td class="text-center">10-06-2024</td>
                             <td class="text-center">30-06-2024</td>
                             <td class="text-center">
-                              <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1"><i class="bi bi-pencil-square"></i></a>
-                              <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
+                              <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1 mb-1"><i class="bi bi-pencil-square"></i></a>
+                              <br><a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
                             </td>
                           </tr>
                           <tr>
@@ -187,16 +260,16 @@
                             <td class="text-center"></td>
                             <td class="text-center"></td>
                             <td class="text-center">
-                              <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1"><i class="bi bi-pencil-square"></i></a>
-                              <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
+                              <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-0 px-1 mb-1"><i class="bi bi-pencil-square"></i></a>
+                              <br><a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-0 px-1"><i class="bi bi-trash-fill"></i></a>
                             </td>
                           </tr>
 
 
                           <tr>
                             <td class="text-center" colspan="7">
-                              <a data-bs-toggle="modal" data-bs-target="#CreateProject" href="" class="fw-bold btn btn-primary py-0 px-2">
-                                CreateProject
+                              <a data-bs-toggle="modal" data-bs-target="#AddProject" href="" class="btn btn-info py-0 px-2">
+                                AddProject
                               </a>
                             </td>
                           </tr>
@@ -244,8 +317,8 @@
               </div>
             </div>
           </div>
-          <!-- CreateProject -->
-          <div class="modal fade" id="CreateProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <!-- AddProject -->
+          <div class="modal fade" id="AddProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
               <div class="modal-content">
                 <div class="modal-header">
@@ -290,8 +363,8 @@
 
                     </td>
                     <td class="text-center">
-                      <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-1"><i class="bi bi-pencil-square"></i></a>
-                      <a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-1"><i class="bi bi-trash-fill"></i></a>
+                      <a data-bs-toggle="modal" data-bs-target="#Edit" href="" class="btn btn-success py-1 mb-1"><i class="bi bi-pencil-square"></i></a>
+                      <br><a data-bs-toggle="modal" data-bs-target="#Delete" href="" class="btn btn-danger py-1"><i class="bi bi-trash-fill"></i></a>
                     </td>
                   </tr>
           
