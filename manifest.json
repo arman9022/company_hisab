@@ -2,7 +2,7 @@
   "name": "Full Name",
   "short_name": "Short Name",
   "description": "Description of your app",
-  "start_url": "http://localhost/home-screen/",
+  "start_url": "https://arman9022.github.io/company_hisab/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
